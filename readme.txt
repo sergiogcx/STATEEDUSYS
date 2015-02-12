@@ -1,1 +1,1 @@
-Any source files found in this folder are propietory and not meant for free distribution.
+Any source files found in this folder are proprietary of the company and are distributed at the user's discretion.

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<configuration>
+	<certificate_managercode fontsize="10">123-456 Garcia, Sergio</certificate_managercode>
+	<certificate_website_url fontsize="8">www.StateCertify.com</certificate_website_url>
+	<certificate_companyname fontsize="8">State Educational Systems, LLC.</certificate_companyname>
+	<certificate_companynumber fontsize="8">(512) 583-2305, Fax [2306]</certificate_companynumber>
+	<certificate_licensenumber fontsize="10">1234567</certificate_licensenumber>
+
+	<certificate_background>pngsuite/tentativebg.png</certificate_background>
+	<certificate_signature>pngsuite/signature.png</certificate_signature>
+	<certificate_font>Helvetica</certificate_font>
+
+	<!-- This will help determine absolute core XY position -->
+	<certificate_width>264</certificate_width>
+	<certificate_height>285</certificate_height>
+
+	<certificate_margins_a>15</certificate_margins_a>
+	<certificate_margins_b>253</certificate_margins_b>
+	<certificate_margins_y>-67</certificate_margins_y>
+		
+
+	<text_name_pos_x>0</text_name_pos_x>
+	<text_name_pos_y>-113</text_name_pos_y>
+	<text_name_size>19</text_name_size>
+	
+		<!-- In relation to actual certificate core XY position -->
+		<text_core_pos_x>20</text_core_pos_x>
+		<text_core_pos_y>-20</text_core_pos_y>
+
+		<!-- In relation to text Core XY position -->
+		<text_managername_pos_x>-2</text_managername_pos_x>
+		<text_managername_pos_y>-7</text_managername_pos_y>
+		
+		<text_companyname_pos_x>120</text_companyname_pos_x>
+		<text_companyname_pos_y>-7</text_companyname_pos_y>
+		
+		<text_urladdress_pos_x>-2</text_urladdress_pos_x>
+		<text_urladdress_pos_y>-17</text_urladdress_pos_y>
+				
+		<text_phonenumber_pos_x>120</text_phonenumber_pos_x>
+		<text_phonenumber_pos_y>-17</text_phonenumber_pos_y>
+				
+		<text_licensenumber_pos_x>95</text_licensenumber_pos_x>
+		<text_licensenumber_pos_y>-134</text_licensenumber_pos_y>
+				
+		<text_issueddate_pos_x>10</text_issueddate_pos_x>
+		<text_issueddate_pos_y>-145</text_issueddate_pos_y>
+		<text_issueddate_size>10</text_issueddate_size>
+		
+		<text_expirationdate_pos_x>135</text_expirationdate_pos_x>
+		<text_expirationdate_pos_y>-145</text_expirationdate_pos_y>
+		<text_expirationdate_size>10</text_expirationdate_size>
+	
+	<!-- In relation to certificate_height -->
+	<image_signature_pos_x>0</image_signature_pos_x>
+	<image_signature_pos_y>-255</image_signature_pos_y>
+	
+</configuration>

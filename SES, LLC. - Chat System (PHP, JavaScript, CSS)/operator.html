@@ -1,0 +1,73 @@
+<?php
+	
+	$debug = isset($ses_cnss_debug) ? $ses_cnss_debug : false;
+	$session_id = isset($session_id) ? $session_id : false;
+	$session_key = isset($session_key) ? $session_key : false;
+	$session_usersname = isset($session_usersname) ? $session_usersname : false;
+?>
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="javascript/style.css"> 
+<script src="javascript/jquery-1.9.1.min.js" type="textjavascript"></script>
+<script src="javascript/soundmanager2-jsmin.js" type="textjavascript"></script> 
+<script src="javascript_system.js" type="textjavascript"></script>
+<link rel="shortcut icon" href="javascript/ses_cnss.ico" />
+
+<TITLE>StateCertify.com - Live Support System 0.9 (BETA)</TITLE>
+
+</HEAD> 
+<BODY BGCOLOR="FFFFFF"  >
+
+<div class="ses_mainbox" id="mainBox" name="mainBox">
+	<div class="ses_topbox" id="topBox">
+		<div class="ses_topboxcontainer"><img src="javascript/logo.png" border=0 />
+			<button class="ses_button" style="float:right;"><div class="littletext"><a href='/welcome/operatorlogout'>Logout</a></div><img class="littleicon" src="javascript/quit.png" /></button>
+			<div class="ses_loggedas">Logged-in as <b>Admin</b></div>
+			<div name='toggle' id='toggle' class="ses_toggle" >
+				<a href='javascript: toggleSwitch();'><img name='togglex' id='togglex' border=0 src='javascript/off.png' /></a>
+			</div>
+		</div>
+	</div>
+	<div class="ses_middleboxcontainer" id="middleBox">
+		<div class="ses_contentbox" id="contentBox" name="contentBox"></div>
+		
+		<div class="ses_right_box" id="rightBox" name="rightBox"></div>
+	</div>
+	
+	<div class="messageBox"><textarea name="message" id="message" class="message" type="text" size="20" maxlength="128"></textarea></div>
+	<div class="sendButtonBox"><input name="send" id="send" type="submit" value="Submit" class="sendMessage" onclick='javascript:triggerSubmit();' /></div>
+	<div id="http_status_box" name="http_status_box" class="http_status_waiting"></div>
+	<div class="poweredby" align="center">Powered by: <b>Live Support System</b> @ <?php echo date("Y"); ?> State Educational Systems, LLC.</div>
+</div>
+
+<div class="ses_debugmain" id="ses_debugmain" style='display: none;'> 
+	<div class="ses_debugbox" id="debugBox" name="debugBox">Debug Box</div>
+	
+	<button onclick="getNumberOfMessages();">Get # Msg</button>
+	<button onclick="getMessages();">Get Messages</button>
+	<button onclick="showDialog('whatup');">OpenDialog</button>
+	<button onclick="closeDialog()">Close Dialog</button>
+	<input name="differx" id="differx" type="text" size="20"  />
+	<p id="timer"></p> - <p id="msgdiff"></p>
+</div>
+
+<button onclick="stopTimer();">Stop time</button>
+
+<div class="bubble dialog" id="dialog" style="display: none;">
+	<div id="dialogtitle" class="dialog_title"><h1>What Up</h1></div>
+	<div id="dialogcontent" class="dialog_content"></div>
+	<a href='javascript: closeDialog();'>Close Dialog</a>
+</div>
+
+
+
+<input type="hidden" name="sessionid" id="sessionid" value="16" />
+<input type="hidden" name="sessionstarted" id="sessionstarted" value="2013-04-06 10:25" />
+<input type="hidden" name="sessionkey" id="sessionkey" value="16" />
+<input type="hidden" name="sessionmsgd" id="sessionmsgd" value="0" />
+<input type="hidden" name="sessionlive" id="sessionlive" value="0" />
+<input type="hidden" name="sessionlivetimer" id="sessionlivetimer" value="0" />
+<input type="hidden" name="sessionusersname" id="sessionusersname" value="System" />
+
+</BODY>
+</HTML> 

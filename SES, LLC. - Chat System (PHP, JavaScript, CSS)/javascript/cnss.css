@@ -1,0 +1,10 @@
+.ses_contentbox  {
+	background-color: gray;
+	width: 600px;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+body {
+color: black;
+}

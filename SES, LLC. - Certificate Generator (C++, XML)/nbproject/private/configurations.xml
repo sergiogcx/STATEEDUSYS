@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose --renderdebug</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose --renderdebug --configfile</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose  --configfile --renderdebug</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose  --configfile dream.xml --renderdebug</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile dream.xml</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile config.xml</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" --input names.txt --verbose   --renderdebug --config config.xml --output /home/sergio/Desktop/myfile.pdf</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" --input names.txt --verbose   --renderdebug --config config.xml --output /home/sergio/Desktop/myfile.pdf</runcommand>
+        <rundir>/home/sergio/NetBeansProjects/certificateGenerator/dist/Debug/GNU-Linux-x86</rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile config.xml</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile config.xml --output /home/sergio/Desktop/outputfile.pdf</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile config.xml --output /home/sergio/Desktop/crtGen/outputfile.pdf</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile config.xml </runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" names.txt --verbose   --renderdebug --configfile config.xml --output /home/sergio/Desktop/myfile.pdf</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" --input names.txt --verbose   --renderdebug --configfile config.xml --output /home/sergio/Desktop/myfile.pdf</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" --input names.txt --verbose   --renderdebug --config config.xml --output /home/sergio/Desktop/myfile.pdf</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" --input names.txt --verbose   --renderdebug --config config.xml --output /home/sergio/Desktop/myfile.pdf</runcommand>
+        <rundir>/home/sergio/NetBeansProjects/certificateGenerator/dist/Release/GNU-Linux-x86</rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

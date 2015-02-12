@@ -1,0 +1,500 @@
+.ses_mainbox {
+	background-color: #D0D0D0;
+	width: 100%; 
+	height: 100%;
+}
+
+.ses_topbox  {
+	background-color: #C0C0C0;
+	width: 100%;
+	margin: 0; 
+	padding: 0px;
+	float: left;
+	font-family: sans-serif;
+    font-size:small;
+}
+
+.ses_topboxcontainer  {
+	padding: 10px;
+	background-color: hsl(0,0%,90%);
+	background-image: url(/cnss/javascript/header.png);
+	border-width: 2px;
+	border-color: black;
+}
+
+.ses_middleboxcontainer { 
+	width: 100%;
+}
+
+.ses_contentbox  {
+	background-image: url(/cnss/javascript/sb128.png);
+	background-image: url(/cnss/javascript/sb128.png);
+	
+	width: 70%;
+	height: 70%;
+	overflow-y: scroll;
+	padding: 0px;
+	font-family: sans-serif;
+    font-size:small;
+	float: left;
+}
+
+
+
+
+.ses_right_box {
+	background-color: #F4F4F4;
+	width: 30%;
+	height: 70%;
+	overflow-y: scroll; 
+	padding: 0px;
+	float: left;
+}
+
+.ses_debugmain {
+/*	display: none; */
+}
+
+.ses_debugbox  {
+	background-color: #CCCCCC;
+	width: 600px;
+	height: 600px;
+	overflow-y: scroll;
+	padding: 10px;
+	font-family: "Courier New", Courier, monospace;
+	color: #990000;
+}
+
+.sendButtonBox {
+	float: left;
+	top: -50px;
+	width: 10%;
+}
+
+.message { 
+	width: 90%;
+	height: 50px;
+	resize: none; 
+	position: relative;
+	float: left;
+	top: 1px;
+}
+
+.sendMessage {
+	width: 100%;
+	height: 52px;
+	margin: 0px;
+}
+
+.http_status_reading { 
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	border-color: black;
+	border-width: 1px;
+	position: relative;
+	left: 600px;
+	top: -100px;
+}
+
+.http_status_waiting { 
+	width: 10px;
+	height: 10px;
+	background-color: gray;
+	border-color: black;
+	border-width: 1px;
+	position: relative;
+	left: 600px;
+	top: -100px;
+}
+
+.bubble {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+}
+
+.tail {
+    //box-sizing: border-box;
+    //border:1px dotted red;
+    position: absolute;
+    top: 12px;
+    left: -18px;
+    height: 18px;
+    width:18px;
+    overflow:hidden;
+}
+.tail:before {
+    //box-sizing: border-box;
+    //border:1px dotted green;
+    background-color: #F2F2F2;
+    box-shadow: 0 0 6px #B2B2B2;
+    content: "\00a0";
+
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    height: 12px;
+    width:  12px;
+    -webkit-transform: skew( -45deg );
+    -moz-transform:    skew( -45deg );
+}
+
+.bubblecont {
+	width: 100%;
+}
+
+.userbubble {
+    background-color: #FFFFCC;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+}
+
+.yellowbar {
+    background-color: #FFFFCC; 
+    padding: 10px;
+	margin-top: 5px;
+	box-shadow: 0 0 6px #B2B2B2;
+	position: relative;
+	height: 50px;
+}
+
+.ses_session_contentbox {
+	position: relative;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.userdarkbackground {
+	background: rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: 0;
+    right: 0;
+    left: 0;
+    height: 50%;
+	padding: 10px;
+	overflow-y: scroll;
+}
+
+.usertail {
+    //box-sizing: border-box;
+    //border:1px dotted red;
+	
+    position: absolute;
+    top: 12px;
+    left: -18px;
+    height: 18px;
+    width:18px;
+    overflow:hidden;
+}
+.usertail:before {
+    //box-sizing: border-box;
+    //border:1px dotted green;
+    background-color: #FFFFCC;
+    box-shadow: 0 0 6px #B2B2B2;
+    content: "\00a0";
+
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    height: 12px;
+    width:  12px;
+    -webkit-transform: skew( -45deg );
+    -moz-transform:    skew( -45deg );
+}
+
+.me {
+    margin: 5px 45px 5px 20px;         
+}
+
+.you {
+    margin: 5px 45px 5px 20px;     
+}
+
+.poweredby {
+	color: #C0C0C0;
+	font-size: 10px;
+	font-family: sans-serif; 
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.littleicon {
+margin-right: 20px;
+	border: 0px;
+	float: right;
+	position: relative;
+	top: -3px;
+	width: 28px;
+	height: 28px;
+}
+
+.littletext { 
+	float: right;
+	padding: 5px;
+}
+
+.whosays { 
+	color: #CCCCCC;
+	font-size: 10px;
+	font-family: sans-serif; 
+	float: left; 
+}
+
+
+
+/* Brushed Metal by @simurai */
+
+/* globals */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
+@import url(/cnss/javascript/prefixes.css);
+
+html {
+	font: "Droid Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	background-color: hsla(0,0%,85%,1);
+	background-image:	-webkit-repeating-linear-gradient( 45deg, hsla(0,0%,0%,0) 0, hsla(0,0%,0%,.015) 5px),
+						-webkit-repeating-linear-gradient(-45deg, hsla(0,0%,0%,0) 0, hsla(0,0%,0%,.015) 5px);
+}
+
+
+
+button { border: none; display: block; }
+a { text-decoration: none; display: block; }
+
+
+
+/* Metal ------------------------- */
+
+.metal {
+	position: relative;
+	margin: 40px auto;
+	
+	font: bold 6em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	color: hsla(0,0%,20%,1);
+	text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+	
+	background-color: hsl(0,0%,90%);
+	-webkit-box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, 	/* border */
+						inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, 	/* soft SD */
+						inset hsla(0,0%,0%, .25) 0 -1px 0px 7px,	/* bottom SD */
+						inset hsla(0,0%,100%,.7) 0  2px 1px 7px, 	/* top HL */
+						
+							  hsla(0,0%, 0%,.15) 0 -5px 6px 4px, 	/* outer SD */
+							  hsla(0,0%,100%,.5) 0  5px 6px 4px;	/* outer HL */	
+	
+	-webkit-transition: color .2s;
+}
+
+
+
+/* Radial ------------------------- */
+
+.radial.metal {
+	width: 40px;
+	height: 40px;
+	line-height: 1px;
+	border-radius: 80px;
+	background-image:	-webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+						-webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+						-webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+						-webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+						
+						-webkit-repeating-radial-gradient(	50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+						-webkit-repeating-radial-gradient(	50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+						-webkit-repeating-radial-gradient(	50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+						
+						-webkit-radial-gradient(	50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);					
+}
+
+
+.metal.radial:before, .metal.radial:after {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	
+	/* fake conical gradients */
+	background-image: 	-webkit-radial-gradient(  50%   0%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+						-webkit-radial-gradient(  50% 100%, 10% 50%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+						-webkit-radial-gradient(   0%  50%, 50% 10%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%),
+						-webkit-radial-gradient( 100%  50%, 50% 06%, hsla(0,0%,0%,.1) 0%, hsla(0,0%,0%,0) 100%);
+}
+.metal.radial:before { 	-webkit-transform: rotate( 65deg); }
+.metal.radial:after {	-webkit-transform: rotate(-65deg); }
+
+
+
+
+/* Linear ------------------------- */
+
+.metal.linear {
+	width: 100px;
+	font-size: 4em;
+	border-radius: .5em;
+	background-image: 	-webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),					
+						-webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),					
+						-webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+						
+						-webkit-linear-gradient(-90deg, hsl(0,0%,78%)  0%, 
+														hsl(0,0%,90%) 47%, 
+														hsl(0,0%,78%) 53%,
+														hsl(0,0%,70%)100%);						
+}
+
+
+/* Oval ------------------------- */
+
+.metal.linear.oval {
+	margin-top: 0px;
+	width: 70px;
+	height: 60px;
+	line-height: 60px !important;
+	border-radius: 50%;
+	font: italic bold 3em/50px Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+
+/* active ------------------------- */
+
+.metal:active {
+	color: hsl(210, 100%, 40%);
+	text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+	-webkit-box-shadow: 
+					inset hsla(210,100%,30%,  1) 0  0px 0px 4px, 	/* border */
+					inset hsla(210,100%,15%, .4) 0 -1px 5px 4px, 	/* soft SD */
+					inset hsla(210,100%,20%,.25) 0 -1px 0px 7px,	/* bottom SD */
+					inset hsla(210,100%,100%,.7) 0  2px 1px 7px, 	/* top HL */
+							
+						  hsla(210,100%,75%, .8) 0  0px 3px 2px, 	/* outer SD */			
+						  hsla(210,50%,40%, .25) 0 -5px 6px 4px, 	/* outer SD */
+						  hsla(210,80%,95%,   1) 0  5px 6px 4px;	/* outer HL */
+}
+
+.ses_button {
+	background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+
+.blist { 
+	background: url("/cnss/javascript/sb16.png") no-repeat 5 10 transparent;
+	width: 140px;
+}
+
+.bpend { 
+	background-color: #FFC0C0;
+	width: 140px;	
+}
+
+.dialog {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+}
+
+.dialog_title {
+}
+
+.dialog_content {
+}
+
+.dialog_button {
+}
+
+.extended {
+	width: 100%;
+}
+
+.ses_button:active { 
+	background-color: #1E1E20;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: white;
+}
+
+.ses_loggedas { 
+	background-color:rgba(30,30,32,0.1);
+	border-radius: 5px;
+	float: right;
+	padding: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+.ses_toggle {
+	float: right;
+	margin-right: 100px;
+	
+}
+
+.listitems { 
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.yellowoptions {
+	color: #C0C0C0;
+	text-decoration: none;
+	font-size: 12px;
+	float: right;
+	margin-right: 25px;
+	position: relative;
+	/* top: -20px; */
+}
+
+.yellowtitle {
+	position: relative;
+	color: #C0C0C0;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	margin-left: 12px;
+}
+
+.yellowusericon {
+	position: relative;
+	width: 42px;
+	height: 42px;
+	float: left;
+}

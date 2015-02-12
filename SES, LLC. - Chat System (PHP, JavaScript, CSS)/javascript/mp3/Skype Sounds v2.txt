@@ -1,0 +1,18 @@
+Skype Soundset By Black Leopard Using Sounds From Skype and OSX
+
+Skype Sounds
+
+SoundSet:
+"Connected"			        Connect.wav
+"Contact Signed Off"			ContactOff.wav
+"Contact Signed On"			ContactOn.wav
+"Disconnected"				Disconnect.wav
+"Error"					Error.wav
+"File Transfer Began"			StartTransfer.wav
+"File Transfer Canceled Remotely"	Error.wav
+"File Transfer Complete"		TransferComplete.wav
+"File Transfer Request"			TransferRequest.wav
+"Message Received (New)"		MessageReceived.wav
+"Message Received (Stranger)"		MessageReceived.wav
+"Message Received"			MessageReceived.wav
+"New Mail Received"			NewMail.wav

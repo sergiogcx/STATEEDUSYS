@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!-- US6: 468,261 -->
+<!-- US10: 684,297 -->
+
+<envelope>
+	<font>ttfont/ubuntu.ttf</font>
+	
+	<width>684</width>
+	<height>297</height>
+	
+	<logo x="20" y="82" w="64" h="62">pngsuite/logobig_icon.png</logo>
+	<mail_icon x="300" y="181" w="32" h="32">pngsuite/mail.png</mail_icon>
+	
+	<!-- In relation to Documents' XY -->
+	<foobar_a x="100" y="115" w="6" h="100"></foobar_a>
+	<foobar_b x="337" y="225" w="6" h="78"></foobar_b>
+	<foobar_color r="0" g="0" b="0"></foobar_color>
+	
+	<!-- In relation to Logo's XY -->
+	<ses_title x="115" y="35" size="20">StateCertify.com</ses_title>
+	<ses_title_company x="115" y="49" size="12">State Educational Systems, LLC.</ses_title_company>
+	<ses_title_company_address x="115" y="62" size="12">10101 West Parmer Ste. 1335.</ses_title_company_address>
+	<ses_title_company_csz x="115" y="75" size="12">Austin, TX 78717.</ses_title_company_csz>
+	<ses_title_phone x="115" y="95" size="12">(512)582-2305, Fax [2306].</ses_title_phone>
+	
+	<usr_name x="350" y="160" size="16"></usr_name>
+	<usr_address x="350" y="178" size="14"></usr_address>
+	<usr_address_csz x="350" y="195" size="14"></usr_address_csz>
+	
+		
+</envelope>

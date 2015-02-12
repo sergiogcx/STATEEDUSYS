@@ -1,0 +1,68 @@
+<?php
+	$debug = isset($ses_cnss_debug) ? $ses_cnss_debug : false;
+	$id = isset($ses_cnss_id) ? $ses_cnss_id : false;
+	$mode = isset($ses_cnss_mode) ? $ses_cnss_mode : false;
+	$sesid = isset($ses_cnss_sesid) ? $ses_cnss_sesid : false;
+	$name = isset($ses_cnss_name) ? $ses_cnss_name : false;
+	$time = isset($ses_cnss_time) ? $ses_cnss_time : false;
+	$status = isset($ses_cnss_status) ? $ses_cnss_status : 0;
+	$key = isset($ses_cnss_passcode) ? $ses_cnss_passcode : 0;
+?>
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="javascript/welcome.css">
+<link rel="stylesheet" type="text/css" href="javascript/cnssuser.css">
+<script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="javascript/soundmanager2-jsmin.js" type="text/javascript"></script> 
+<script src="javascript/cnssuser.js" type="text/javascript"></script>
+
+<TITLE>StateCertify.com - Live Support System 0.9 (BETA)</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="FFFFFF" onload="<?php echo ($mode === "recovery" ? "initializeRecovery();" : "initializeNormal();"); ?>"  >
+<div class="darkDiv" style="margin-top: 0px;">
+	<img src="javascript/ses_cnss.png" style="float: left; position: relative; top: -8px; left: -5px;" width="48" />
+	<span class="mediumTextShadow" style="margin-left: 10px;">Live Chat Support</span>
+	<a href="javascript:quitConversation(1);"><img class="littleicon" src="javascript/quit.png" border="0"/></a>
+	<a href="javascript:quitConversation(0);"><img class="littleicon" src="javascript/email.png" border="0"/></a>
+</div>
+
+<div id="mainBox" style="width: 100%;">
+	<div class="ses_contentbox" id="contentBox" name="contentBox"></div>
+	<div class="rightBox" id="rightBox"></div>
+	<div class="messageBox"><textarea name="message" id="message" class="message" type="text" size="20" maxlength="128" disabled="true" > (please wait while you are connected to an operator) </textarea></div>
+	<div class="sendButtonBox"><input name="send" id="send" type="submit" value="Submit" class="sendMessage" onclick='javascript:triggerSubmit();' /></div>
+	<div id="http_status_box" name="http_status_box" class="http_status_waiting"></div>
+	<div class="poweredby" align="center">Powered by: <b>Live Support System</b> @ <?php echo date("Y"); ?> State Educational Systems, LLC.</div>
+</div>
+	
+	
+
+
+<!-- DEBUG BOX -->
+<script>
+	initializeDebugMode(true);
+</script>
+<div id="ses_debugmain" <?php echo "" . ( $debug ? "" : "style='display: none;'") ; ?> > 
+	<div class="ses_debugbox" id="debugBox" name="debugBox">Debug Box</div>
+	<button onclick="stopTimer();">Stop time</button>
+	<button onclick="getNumberOfMessages();">Get # Msg</button>
+	<button onclick="getMessages();">Get Messages</button>
+	<input name="differx" id="differx" type="text" size="20"  />
+	<p id="timer"></p> - <p id="msgdiff"></p>
+</div>
+<!-- DEBUG BOX -->
+
+<!-- HIDDEN VALUES -->
+<input type="hidden" name="sessionid" id="sessionid" value="<?php echo $id; ?>" />
+<input type="hidden" name="sessionstarted" id="sessionstarted" value="<?php echo $time; ?>" />
+<input type="hidden" name="sessionkey" id="sessionkey" value="<?php echo $key; ?>" />
+<input type="hidden" name="sessionmsgd" id="sessionmsgd" value="0" />
+<input type="hidden" name="sessionlive" id="sessionlive" value="<?php echo $status; ?>" />
+<input type="hidden" name="sessionlivetimer" id="sessionlivetimer" value="0" />
+<input type="hidden" name="sessionusersname" id="sessionusersname" value="<?php echo $name; ?>" />
+<!-- HIDDEN VALUES -->
+
+</BODY>
+</HTML> 
